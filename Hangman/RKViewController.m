@@ -7,7 +7,7 @@
 //
 
 #import "RKViewController.h"
-
+/*
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
 // Uniform index.
@@ -73,8 +73,11 @@ GLfloat gCubeVertexData[216] =
     -0.5f, -0.5f, -0.5f,       0.0f, 0.0f, -1.0f,
     -0.5f, 0.5f, -0.5f,        0.0f, 0.0f, -1.0f
 };
+ */
 
-@interface RKViewController () {
+@interface RKViewController ()
+/*
+{
     GLuint _program;
     
     GLKMatrix4 _modelViewProjectionMatrix;
@@ -83,7 +86,10 @@ GLfloat gCubeVertexData[216] =
     
     GLuint _vertexArray;
     GLuint _vertexBuffer;
+
 }
+
+
 @property (strong, nonatomic) EAGLContext *context;
 @property (strong, nonatomic) GLKBaseEffect *effect;
 
@@ -94,9 +100,150 @@ GLfloat gCubeVertexData[216] =
 - (BOOL)compileShader:(GLuint *)shader type:(GLenum)type file:(NSString *)file;
 - (BOOL)linkProgram:(GLuint)prog;
 - (BOOL)validateProgram:(GLuint)prog;
+*/
+
 @end
 
 @implementation RKViewController
+
+@synthesize _myView;
+//@synthesize _myHangImage;
+@synthesize _winImage;
+@synthesize _myModel;
+
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        //
+        [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"Graveyard.jpg"]]];
+        _winImage.hidden = YES;
+        _winImage.image = [UIImage imageNamed:@"You-lost.jpg"];
+        _myView = [[RKView alloc] init];
+        _myModel = [[RKModel alloc] init];
+        
+        _updateCurrent.text = [_myModel _current];
+        _updateCurrentWrong.text = [_myModel _currentWrong];
+        _updateCurrent.numberOfLines = 0;
+        _updateCurrentWrong.numberOfLines = 0;
+        [_myView changeImage: [_myModel _numberWrong]];
+        //_myHangImage.image = [_myView _myImage];
+        [self.view setBackgroundColor:[UIColor colorWithPatternImage:[_myView _myImage]]];
+        
+        [self initSounds];
+    }
+    
+    return self;
+}
+
+
+-(void)initSounds
+{
+    NSURL *musicSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/music.mp3", [[NSBundle mainBundle] resourcePath]]];
+    
+    //Error Handling
+    NSError *error1;
+    
+    //Sound
+    _backgroundSound = [[AVAudioPlayer alloc] initWithContentsOfURL:musicSoundUrl error:&error1];
+    
+    //Keeping it at 0 makes it loop forever. If you want it to play only once, change it to 1.
+    _backgroundSound.numberOfLoops = 0;
+    
+    //This is what actually makes your sound place.
+    [_backgroundSound play];
+    [_backgroundSound retain];
+    
+    
+    NSURL *winSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/won.mp3", [[NSBundle mainBundle] resourcePath]]];
+    NSError* error2;
+    _winSound = [[AVAudioPlayer alloc] initWithContentsOfURL:winSoundUrl error:&error2];
+    [_winSound retain];
+    
+    
+    NSURL *lostSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/lost.mp3", [[NSBundle mainBundle] resourcePath]]];
+    NSError* error3;
+    _lostSound = [[AVAudioPlayer alloc] initWithContentsOfURL:lostSoundUrl error:&error3];
+    [_lostSound retain];
+}
+
+
+-(IBAction)resetButtonPressed:(UIButton*)sender
+{
+    [_myModel reset];
+    _updateCurrent.text = [_myModel _current];
+    _updateCurrentWrong.text = [_myModel _currentWrong];
+    
+    [_myView changeImage: [_myModel _numberWrong]];
+    //_myHangImage.image = [_myView _myImage];
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[_myView _myImage]]];
+    
+    _winImage.hidden = YES;
+    [_backgroundSound play];
+}
+
+
+-(IBAction)guessEntered:(UITextField*)sender
+{
+    if ([_myModel gameEnded])
+    {
+        sender.text = @"";
+        [sender resignFirstResponder];
+        return;
+    }
+    
+    //[sender retain];
+    
+    [_myModel enterGuess:sender.text];
+    sender.text = @"";
+    
+    //settext
+    _updateCurrent.text = [_myModel _current];
+    _updateCurrentWrong.text = [_myModel _currentWrong];
+    
+    [_myView changeImage: [_myModel _numberWrong]];
+    //_myHangImage.image = [_myView _myImage];
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[_myView _myImage]]];
+    
+    if ([_myModel gameEnded])
+    {
+        if ([_myModel gameWon])
+        {
+            _winImage.image = [UIImage imageNamed:@"You-won.jpg"];
+            [_winSound play];
+        }
+        else
+        {
+            _winImage.image = [UIImage imageNamed:@"You-lost.jpg"];
+            _updateCurrent.text = [_myModel _currWord];
+            [_lostSound play];
+        }
+        [_winImage setHidden:NO];
+        [_backgroundSound pause];
+    }
+    
+    [sender resignFirstResponder];
+    [_myView becomeFirstResponder];
+    //[sender autorelease];
+}
+
+
+- (void)dealloc {
+    [_updateCurrent autorelease];
+    [_updateCurrentWrong autorelease];
+    [_myView autorelease];
+    [_myModel autorelease];
+    //[_myHangImage autorelease];
+    [_winImage autorelease];
+    [_backgroundSound autorelease];
+    [_winSound autorelease];
+    [_lostSound autorelease];
+    
+    [super dealloc];
+}
+
+
+/*
 
 - (void)dealloc
 {
@@ -391,5 +538,7 @@ GLfloat gCubeVertexData[216] =
     
     return YES;
 }
+ */
+
 
 @end

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772677AF16E441B6001BD8E5 /* dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 772677AE16E441B6001BD8E5 /* dictionary.plist */; };
+		7788429116E181C300409746 /* RKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7788429016E181C300409746 /* RKModel.m */; };
+		7788429516E1C2EF00409746 /* HangmanWords.m in Sources */ = {isa = PBXBuildFile; fileRef = 7788429316E1C2EF00409746 /* HangmanWords.m */; };
+		7788429616E1C2EF00409746 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7788429416E1C2EF00409746 /* words.plist */; };
+		778E3ED016E2A0A80063AF4C /* Graveyard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 778E3ECF16E2A0A80063AF4C /* Graveyard.jpg */; };
+		778E3ED216E2E1E60063AF4C /* You-won.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 778E3ED116E2E1E60063AF4C /* You-won.jpg */; };
+		778E3ED416E2E1F10063AF4C /* You-lost.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 778E3ED316E2E1F10063AF4C /* You-lost.jpg */; };
 		77B3FF6B16E179FE00AA24AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B3FF6A16E179FE00AA24AD /* UIKit.framework */; };
 		77B3FF6D16E179FE00AA24AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B3FF6C16E179FE00AA24AD /* Foundation.framework */; };
 		77B3FF6F16E179FE00AA24AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B3FF6E16E179FE00AA24AD /* CoreGraphics.framework */; };
@@ -28,6 +35,18 @@
 		77B3FF9C16E179FE00AA24AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B3FF6C16E179FE00AA24AD /* Foundation.framework */; };
 		77B3FFA416E179FE00AA24AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77B3FFA216E179FE00AA24AD /* InfoPlist.strings */; };
 		77B3FFA716E179FE00AA24AD /* HangmanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3FFA616E179FE00AA24AD /* HangmanTests.m */; };
+		77B3FFB216E17AA900AA24AD /* RKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3FFB116E17AA900AA24AD /* RKView.m */; };
+		77C6E5E416E982AD009D067A /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77C6E5E316E982AD009D067A /* music.mp3 */; };
+		77C6E5E616E982E3009D067A /* lost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77C6E5E516E982E3009D067A /* lost.mp3 */; };
+		77C6E5E816E982E9009D067A /* won.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 77C6E5E716E982E9009D067A /* won.mp3 */; };
+		77C6E5EA16E98FE5009D067A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C6E5E916E98FE5009D067A /* AVFoundation.framework */; };
+		77FF159F16E1C84C005EFB7B /* hang0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FF159816E1C84C005EFB7B /* hang0.jpg */; };
+		77FF15A016E1C84C005EFB7B /* hang1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FF159916E1C84C005EFB7B /* hang1.jpg */; };
+		77FF15A116E1C84C005EFB7B /* hang2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FF159A16E1C84C005EFB7B /* hang2.jpg */; };
+		77FF15A216E1C84C005EFB7B /* hang3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FF159B16E1C84C005EFB7B /* hang3.jpg */; };
+		77FF15A316E1C84C005EFB7B /* hang4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FF159C16E1C84C005EFB7B /* hang4.jpg */; };
+		77FF15A416E1C84C005EFB7B /* hang5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FF159D16E1C84C005EFB7B /* hang5.jpg */; };
+		77FF15A516E1C84C005EFB7B /* hang6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FF159E16E1C84C005EFB7B /* hang6.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +60,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		772677AE16E441B6001BD8E5 /* dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dictionary.plist; sourceTree = "<group>"; };
+		7788428F16E181C300409746 /* RKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKModel.h; sourceTree = "<group>"; };
+		7788429016E181C300409746 /* RKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKModel.m; sourceTree = "<group>"; };
+		7788429216E1C2EF00409746 /* HangmanWords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanWords.h; sourceTree = "<group>"; };
+		7788429316E1C2EF00409746 /* HangmanWords.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanWords.m; sourceTree = "<group>"; };
+		7788429416E1C2EF00409746 /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
+		778E3ECF16E2A0A80063AF4C /* Graveyard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Graveyard.jpg; sourceTree = "<group>"; };
+		778E3ED116E2E1E60063AF4C /* You-won.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "You-won.jpg"; sourceTree = "<group>"; };
+		778E3ED316E2E1F10063AF4C /* You-lost.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "You-lost.jpg"; sourceTree = "<group>"; };
 		77B3FF6716E179FE00AA24AD /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77B3FF6A16E179FE00AA24AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		77B3FF6C16E179FE00AA24AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -68,6 +96,19 @@
 		77B3FFA316E179FE00AA24AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		77B3FFA516E179FE00AA24AD /* HangmanTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HangmanTests.h; sourceTree = "<group>"; };
 		77B3FFA616E179FE00AA24AD /* HangmanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HangmanTests.m; sourceTree = "<group>"; };
+		77B3FFB016E17AA900AA24AD /* RKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKView.h; sourceTree = "<group>"; };
+		77B3FFB116E17AA900AA24AD /* RKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKView.m; sourceTree = "<group>"; };
+		77C6E5E316E982AD009D067A /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		77C6E5E516E982E3009D067A /* lost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lost.mp3; sourceTree = "<group>"; };
+		77C6E5E716E982E9009D067A /* won.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = won.mp3; sourceTree = "<group>"; };
+		77C6E5E916E98FE5009D067A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		77FF159816E1C84C005EFB7B /* hang0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang0.jpg; sourceTree = "<group>"; };
+		77FF159916E1C84C005EFB7B /* hang1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang1.jpg; sourceTree = "<group>"; };
+		77FF159A16E1C84C005EFB7B /* hang2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang2.jpg; sourceTree = "<group>"; };
+		77FF159B16E1C84C005EFB7B /* hang3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang3.jpg; sourceTree = "<group>"; };
+		77FF159C16E1C84C005EFB7B /* hang4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang4.jpg; sourceTree = "<group>"; };
+		77FF159D16E1C84C005EFB7B /* hang5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang5.jpg; sourceTree = "<group>"; };
+		77FF159E16E1C84C005EFB7B /* hang6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang6.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +121,7 @@
 				77B3FF6F16E179FE00AA24AD /* CoreGraphics.framework in Frameworks */,
 				77B3FF7116E179FE00AA24AD /* GLKit.framework in Frameworks */,
 				77B3FF7316E179FE00AA24AD /* OpenGLES.framework in Frameworks */,
+				77C6E5EA16E98FE5009D067A /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,9 +138,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		771F464016E1C7370025388B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				778E3ECF16E2A0A80063AF4C /* Graveyard.jpg */,
+				778E3ED116E2E1E60063AF4C /* You-won.jpg */,
+				778E3ED316E2E1F10063AF4C /* You-lost.jpg */,
+				77C6E5E516E982E3009D067A /* lost.mp3 */,
+				77C6E5E716E982E9009D067A /* won.mp3 */,
+				77C6E5E316E982AD009D067A /* music.mp3 */,
+				77FF159816E1C84C005EFB7B /* hang0.jpg */,
+				77FF159916E1C84C005EFB7B /* hang1.jpg */,
+				77FF159A16E1C84C005EFB7B /* hang2.jpg */,
+				77FF159B16E1C84C005EFB7B /* hang3.jpg */,
+				77FF159C16E1C84C005EFB7B /* hang4.jpg */,
+				77FF159D16E1C84C005EFB7B /* hang5.jpg */,
+				77FF159E16E1C84C005EFB7B /* hang6.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		77B3FF5E16E179FD00AA24AD = {
 			isa = PBXGroup;
 			children = (
+				771F464016E1C7370025388B /* Resources */,
 				77B3FF7416E179FE00AA24AD /* Hangman */,
 				77B3FF9F16E179FE00AA24AD /* HangmanTests */,
 				77B3FF6916E179FE00AA24AD /* Frameworks */,
@@ -118,6 +181,7 @@
 		77B3FF6916E179FE00AA24AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77C6E5E916E98FE5009D067A /* AVFoundation.framework */,
 				77B3FF6A16E179FE00AA24AD /* UIKit.framework */,
 				77B3FF6C16E179FE00AA24AD /* Foundation.framework */,
 				77B3FF6E16E179FE00AA24AD /* CoreGraphics.framework */,
@@ -137,6 +201,14 @@
 				77B3FF8816E179FE00AA24AD /* Shader.vsh */,
 				77B3FF8A16E179FE00AA24AD /* RKViewController.h */,
 				77B3FF8B16E179FE00AA24AD /* RKViewController.m */,
+				77B3FFB016E17AA900AA24AD /* RKView.h */,
+				77B3FFB116E17AA900AA24AD /* RKView.m */,
+				7788428F16E181C300409746 /* RKModel.h */,
+				7788429016E181C300409746 /* RKModel.m */,
+				7788429216E1C2EF00409746 /* HangmanWords.h */,
+				7788429316E1C2EF00409746 /* HangmanWords.m */,
+				772677AE16E441B6001BD8E5 /* dictionary.plist */,
+				7788429416E1C2EF00409746 /* words.plist */,
 				77B3FF8D16E179FE00AA24AD /* RKViewController_iPhone.xib */,
 				77B3FF9016E179FE00AA24AD /* RKViewController_iPad.xib */,
 				77B3FF7516E179FE00AA24AD /* Supporting Files */,
@@ -257,6 +329,21 @@
 				77B3FF8916E179FE00AA24AD /* Shader.vsh in Resources */,
 				77B3FF8F16E179FE00AA24AD /* RKViewController_iPhone.xib in Resources */,
 				77B3FF9216E179FE00AA24AD /* RKViewController_iPad.xib in Resources */,
+				7788429616E1C2EF00409746 /* words.plist in Resources */,
+				77FF159F16E1C84C005EFB7B /* hang0.jpg in Resources */,
+				77FF15A016E1C84C005EFB7B /* hang1.jpg in Resources */,
+				77FF15A116E1C84C005EFB7B /* hang2.jpg in Resources */,
+				77FF15A216E1C84C005EFB7B /* hang3.jpg in Resources */,
+				77FF15A316E1C84C005EFB7B /* hang4.jpg in Resources */,
+				77FF15A416E1C84C005EFB7B /* hang5.jpg in Resources */,
+				77FF15A516E1C84C005EFB7B /* hang6.jpg in Resources */,
+				778E3ED016E2A0A80063AF4C /* Graveyard.jpg in Resources */,
+				778E3ED216E2E1E60063AF4C /* You-won.jpg in Resources */,
+				778E3ED416E2E1F10063AF4C /* You-lost.jpg in Resources */,
+				772677AF16E441B6001BD8E5 /* dictionary.plist in Resources */,
+				77C6E5E416E982AD009D067A /* music.mp3 in Resources */,
+				77C6E5E616E982E3009D067A /* lost.mp3 in Resources */,
+				77C6E5E816E982E9009D067A /* won.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +381,9 @@
 				77B3FF7B16E179FE00AA24AD /* main.m in Sources */,
 				77B3FF7F16E179FE00AA24AD /* RKAppDelegate.m in Sources */,
 				77B3FF8C16E179FE00AA24AD /* RKViewController.m in Sources */,
+				77B3FFB216E17AA900AA24AD /* RKView.m in Sources */,
+				7788429116E181C300409746 /* RKModel.m in Sources */,
+				7788429516E1C2EF00409746 /* HangmanWords.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +572,7 @@
 				77B3FFAC16E179FE00AA24AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77B3FFAD16E179FE00AA24AD /* Build configuration list for PBXNativeTarget "HangmanTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +581,7 @@
 				77B3FFAF16E179FE00AA24AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
