@@ -35,8 +35,7 @@
 
 -(void) reset
 {
-    NSString* tempWord = [_generator getWord];
-    self._currWord = [tempWord uppercaseString];
+    self._currWord = [[_generator getWord] uppercaseString];
     
     NSLog(@"%@", _currWord);
     [_leftToGuess removeAllObjects];

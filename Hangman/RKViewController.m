@@ -152,19 +152,19 @@ GLfloat gCubeVertexData[216] =
     
     //This is what actually makes your sound place.
     [_backgroundSound play];
-    [_backgroundSound retain];
+    //[_backgroundSound retain];
     
     
     NSURL *winSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/won.mp3", [[NSBundle mainBundle] resourcePath]]];
     NSError* error2;
     _winSound = [[AVAudioPlayer alloc] initWithContentsOfURL:winSoundUrl error:&error2];
-    [_winSound retain];
+    //[_winSound retain];
     
     
     NSURL *lostSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/lost.mp3", [[NSBundle mainBundle] resourcePath]]];
     NSError* error3;
     _lostSound = [[AVAudioPlayer alloc] initWithContentsOfURL:lostSoundUrl error:&error3];
-    [_lostSound retain];
+    //[_lostSound retain];
 }
 
 
@@ -180,6 +180,8 @@ GLfloat gCubeVertexData[216] =
     
     _winImage.hidden = YES;
     [_backgroundSound play];
+    [_winSound stop];
+    [_lostSound stop];
 }
 
 
