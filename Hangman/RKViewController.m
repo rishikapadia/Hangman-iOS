@@ -185,6 +185,7 @@ GLfloat gCubeVertexData[216] =
 }
 
 
+
 -(IBAction)guessEntered:(UITextField*)sender
 {
     if ([_myModel gameEnded])

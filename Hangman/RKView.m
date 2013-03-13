@@ -13,6 +13,7 @@
 
 @synthesize _viewController;
 @synthesize _myImage;
+@synthesize _textBox;
 
 - (id)init
 {
@@ -20,9 +21,16 @@
     if (self) {
         // Initialization code here.
         [self changeImage:0];
+        _textBox = [[UITextField alloc] init];
     }
     
     return self;
+}
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_textBox resignFirstResponder];
+    [self becomeFirstResponder];
 }
 
 -(void)changeImage:(NSInteger)index
@@ -35,6 +43,7 @@
 {
     [_viewController autorelease];
     [_myImage autorelease];
+    [_textBox autorelease];
     [super dealloc];
 }
 

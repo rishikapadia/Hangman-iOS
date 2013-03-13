@@ -15,10 +15,12 @@
 @private
     RKViewController* _viewController;
     UIImage* _myImage;
+    UITextField* _textBox;
 }
 
 @property (assign) RKViewController* _viewController;
 @property (assign) UIImage* _myImage;
+@property (retain) IBOutlet UITextField* _textBox;
 
 -(void)changeImage:(NSInteger)index;
 
